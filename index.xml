@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ulric&#39;s Blog</title>
+    <link>https://borays.github.io/</link>
+    <description>Recent content on Ulric&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jun 2017 22:33:31 +0800</lastBuildDate>
+    
+	<atom:link href="https://borays.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Good To Great</title>
+      <link>https://borays.github.io/post/good-to-great/</link>
+      <pubDate>Mon, 26 Jun 2017 22:33:31 +0800</pubDate>
+      
+      <guid>https://borays.github.io/post/good-to-great/</guid>
+      <description>I read Good to Great in January 2016. An awesome read sharing detailed analysis on how good companies became great.</description>
+    </item>
+    
+    <item>
+      <title>2016 06 26</title>
+      <link>https://borays.github.io/post/2016-06-26/</link>
+      <pubDate>Mon, 26 Jun 2017 22:32:19 +0800</pubDate>
+      
+      <guid>https://borays.github.io/post/2016-06-26/</guid>
+      <description>2017-06-26 python  astorfi/TensorFlow-World (1,475s/83f) : 🌎 Simple and ready-to-use tutorials for TensorFlow raghakot/keras-vis (493s/52f) : Neural network visualization toolkit for keras 100/Solid (214s/9f) : 🎯 A comprehensive gradient-free optimization framework written in Python tensorflow/tensor2tensor (1,687s/224f) : A library for generalized sequence to sequence models astorfi/3D-convolutional-speaker-recognition (84s/14f) : plotly/dash (1,632s/128f) : Interactive, reactive web apps in pure python ⭐️ tensorflow/models (17,651s/6,927f) : Models built with TensorFlow ethereum/pyethereum (1,001s/333f) : Next generation cryptocurrency network fchollet/keras (16,891s/6,022f) : Deep Learning library for Python.</description>
+    </item>
+    
+  </channel>
+</rss>
