@@ -5,20 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>404 Page not found</title>
-  <meta property="og:title" content="404 Page not found" />
-  <meta name="twitter:title" content="404 Page not found" />
+  <title>Photoswipe Gallery Sample</title>
+  <meta property="og:title" content="Photoswipe Gallery Sample" />
+  <meta name="twitter:title" content="Photoswipe Gallery Sample" />
+  <meta name="description" content="Making a Gallery">
+  <meta property="og:description" content="Making a Gallery">
+  <meta name="twitter:description" content="Making a Gallery">
   <meta name="author" content=""/>
   <link href='https://borays.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://borays.github.io/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://borays.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://borays.github.io" />
+  <meta property="og:url" content="https://borays.github.io/post/2017-03-20-photoswipe-gallery-sample/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Ulric&#39;s Blog" />
 
   <meta name="generator" content="Hugo 0.24.1" />
-  <link rel="canonical" href="https://borays.github.io" />
+  <link rel="canonical" href="https://borays.github.io/post/2017-03-20-photoswipe-gallery-sample/" />
   <link rel="alternate" href="https://borays.github.io/index.xml" type="application/rss+xml" title="Ulric&#39;s Blog">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -156,14 +159,144 @@
 
 
     
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
     
-  <div role="main" class="container main-content">
-    <div class="text-center">
-      <h1>Whoops, this page doesn&#39;t exist. Move along. (404 error)</h1>
-      <br/>
-      <img src="https://borays.github.io/img/404-southpark.jpg" />
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Photoswipe Gallery Sample</h1>
+                
+                  
+                    <h2 class="post-subheading">Making a Gallery</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  Posted on March 20, 2017
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>Beautiful Hugo adds a few custom shortcodes created by <a href="https://www.liwen.id.au/heg/">Li-Wen Yip</a> and <a href="https://github.com/GjjvdBurg/HugoPhotoSwipe">Gert-Jan van den Berg</a> for making galleries with <a href="http://photoswipe.com">PhotoSwipe</a> .</p>
+
+
+
+<div class="gallery caption-position-bottom caption-effect-fade hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+	  
+  
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('/img/hexagon-thumb.jpg');">
+      <img itemprop="thumbnail" src="/img/hexagon-thumb.jpg" />
+    </div>
+    <a href="/img/hexagon.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+  
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('/img/sphere-thumb.jpg');">
+      <img itemprop="thumbnail" src="/img/sphere-thumb.jpg" alt="Sphere"/>
+    </div>
+      <figcaption>
+          <p>Sphere</p>
+      </figcaption>
+    <a href="/img/sphere.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+  
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img" style="background-image: url('/img/triangle-thumb.jpg');">
+      <img itemprop="thumbnail" src="/img/triangle-thumb.jpg" alt="This is a long comment about a triangle"/>
+    </div>
+      <figcaption>
+          <p>Triangle</p>
+      </figcaption>
+    <a href="/img/triangle.jpg" itemprop="contentUrl"></a>
+  </figure>
+</div>
+
+</div>
+
+<p></p>
+
+<h2 id="example">Example</h2>
+
+<p>The above gallery was created using the following shortcodes:</p>
+
+<pre><code>{{&lt; gallery caption-effect=&quot;fade&quot; &gt;}}
+  {{&lt; figure thumb=&quot;-thumb&quot; link=&quot;/img/hexagon.jpg&quot; &gt;}}
+  {{&lt; figure thumb=&quot;-thumb&quot; link=&quot;/img/sphere.jpg&quot; caption=&quot;Sphere&quot; &gt;}}
+  {{&lt; figure thumb=&quot;-thumb&quot; link=&quot;/img/triangle.jpg&quot; caption=&quot;Triangle&quot; alt=&quot;This is a long comment about a triangle&quot; &gt;}}
+{{&lt; /gallery &gt;}}
+</code></pre>
+
+<h2 id="usage">Usage</h2>
+
+<p>For full details please see the <a href="https://github.com/liwenyip/hugo-easy-gallery/">hugo-easy-gallery GitHub</a> page. Basic usages from above are:</p>
+
+<ul>
+<li>Create a gallery with open and close tags <code>{{&lt; gallery &gt;}}</code> and <code>{{&lt; /gallery &gt;}}</code></li>
+<li><code>{{&lt; figure src=&quot;image.jpg&quot; &gt;}}</code> will use <code>image.jpg</code> for thumbnail and lightbox</li>
+<li><code>{{&lt; figure src=&quot;thumb.jpg&quot; link=&quot;image.jpg&quot; &gt;}}</code> will use <code>thumb.jpg</code> for thumbnail and <code>image.jpg</code> for lightbox</li>
+<li><code>{{&lt; figure thumb=&quot;-small&quot; link=&quot;image.jpg&quot; &gt;}}</code> will use <code>image-small.jpg</code> for thumbnail and <code>image.jpg</code> for lightbox</li>
+<li>All the <a href="https://gohugo.io/extras/shortcodes">features/parameters</a> of Hugo&rsquo;s built-in <code>figure</code> shortcode work as normal, i.e. src, link, title, caption, class, attr (attribution), attrlink, alt</li>
+<li><code>{{&lt; gallery caption-effect=&quot;fade&quot; &gt;}}</code> will fade in captions for all figures in this gallery instead of the default slide-up behavior</li>
+<li>Many gallery styles for captions and hover effects exist; view the <a href="https://github.com/liwenyip/hugo-easy-gallery/">hugo-easy-gallery GitHub</a> for all options</li>
+<li>Note that this theme will load the photoswipe gallery theme and scripts by default, no need to load photoswipe on your individual pages</li>
+</ul>
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://borays.github.io/post/2017-03-07-bigimg-sample/" data-toggle="tooltip" data-placement="top" title="Big Image Sample">&larr; Previous Post</a>
+          </li>
+        
+        
+          <li class="next">
+            <a href="https://borays.github.io/post/2016-06-26/" data-toggle="tooltip" data-placement="top" title="2016 06 26">Next Post &rarr;</a>
+          </li>
+        
+      </ul>
+
+      
+        
+      
+
     </div>
   </div>
+</div>
 
     <footer>
   <div class="container">
