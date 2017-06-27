@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>2017 06 27</title>
+  <meta property="og:title" content="2017 06 27" />
+  <meta name="twitter:title" content="2017 06 27" />
+  <meta name="description" content="2017-06-27 python  astorfi/TensorFlow-World (1,786s/93f) : 🌎 Simple and ready-to-use tutorials for TensorFlow tensorflow/models (17,689s/6,964f) : Models built with TensorFlow 100/Solid (258s/9f) : 🎯 A comprehensive gradient-free optimization framework written in Python plotly/dash (1,692s/130f) : Interactive, reactive web apps in pure python ⭐️ tensorflow/tensor2tensor (1,739s/228f) : A library for generalized sequence to sequence models zsdonghao/SRGAN (72s/5f) : Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network donnemartin/system-design-primer (17,582s/1,781f) : Learn how to design large-scale systems.">
+  <meta property="og:description" content="2017-06-27 python  astorfi/TensorFlow-World (1,786s/93f) : 🌎 Simple and ready-to-use tutorials for TensorFlow tensorflow/models (17,689s/6,964f) : Models built with TensorFlow 100/Solid (258s/9f) : 🎯 A comprehensive gradient-free optimization framework written in Python plotly/dash (1,692s/130f) : Interactive, reactive web apps in pure python ⭐️ tensorflow/tensor2tensor (1,739s/228f) : A library for generalized sequence to sequence models zsdonghao/SRGAN (72s/5f) : Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network donnemartin/system-design-primer (17,582s/1,781f) : Learn how to design large-scale systems.">
+  <meta name="twitter:description" content="2017-06-27 python  astorfi/TensorFlow-World (1,786s/93f) : 🌎 Simple and ready-to-use tutorials for TensorFlow tensorflow/models (17,689s/6,964f) : Models built with TensorFlow 100/Solid (258s/9f) : 🎯 …">
+  <meta name="author" content=""/>
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://borays.github.io/post/2017-06-27/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ulric&#39;s Blog" />
+
+  <meta name="generator" content="Hugo 0.24.1" />
+  <link rel="canonical" href="https://borays.github.io/post/2017-06-27/" />
+  <link rel="alternate" href="https://borays.github.io/index.xml" type="application/rss+xml" title="Ulric&#39;s Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://borays.github.io/css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://borays.github.io/css/pygment_highlights.css" />
+  <link rel="stylesheet" href="https://borays.github.io/css/highlight.min.css" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://borays.github.io">Ulric&#39;s Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>2017 06 27</h1>
+                
+                
+                  <span class="post-meta">
+  Posted on June 27, 2017
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h3 id="2017-06-27">2017-06-27</h3>
+
+<h4 id="python">python</h4>
+
+<ul>
+<li><a href="https://github.com/astorfi/TensorFlow-World">astorfi/TensorFlow-World (1,786s/93f)</a> : 🌎 Simple and ready-to-use tutorials for TensorFlow</li>
+<li><a href="https://github.com/tensorflow/models">tensorflow/models (17,689s/6,964f)</a> : Models built with TensorFlow</li>
+<li><a href="https://github.com/100/Solid">100/Solid (258s/9f)</a> : 🎯 A comprehensive gradient-free optimization framework written in Python</li>
+<li><a href="https://github.com/plotly/dash">plotly/dash (1,692s/130f)</a> : Interactive, reactive web apps in pure python ⭐️</li>
+<li><a href="https://github.com/tensorflow/tensor2tensor">tensorflow/tensor2tensor (1,739s/228f)</a> : A library for generalized sequence to sequence models</li>
+<li><a href="https://github.com/zsdonghao/SRGAN">zsdonghao/SRGAN (72s/5f)</a> : Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network</li>
+<li><a href="https://github.com/donnemartin/system-design-primer">donnemartin/system-design-primer (17,582s/1,781f)</a> : Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.</li>
+<li><a href="https://github.com/fchollet/keras">fchollet/keras (16,924s/6,035f)</a> : Deep Learning library for Python. Runs on TensorFlow, Theano, or CNTK.</li>
+<li><a href="https://github.com/Tr3jer/dnsAutoRebinding">Tr3jer/dnsAutoRebinding (45s/11f)</a> : ssrf、ssrfIntranetFuzz、dnsRebinding、recordEncode、dnsPoisoning、Support ipv4/ipv6</li>
+<li><a href="https://github.com/django/django">django/django (26,481s/10,966f)</a> : The Web framework for perfectionists with deadlines.</li>
+<li><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">junyanz/pytorch-CycleGAN-and-pix2pix (1,740s/189f)</a> : Image-to-image translation in PyTorch (e.g. horse2zebra, edges2cats, and more)</li>
+<li><a href="https://github.com/ethereum/pyethereum">ethereum/pyethereum (1,025s/338f)</a> : Next generation cryptocurrency network</li>
+<li><a href="https://github.com/astorfi/3D-convolutional-speaker-recognition">astorfi/3D-convolutional-speaker-recognition (105s/18f)</a> :</li>
+<li><a href="https://github.com/scikit-learn/scikit-learn">scikit-learn/scikit-learn (19,402s/10,547f)</a> : scikit-learn: machine learning in Python</li>
+<li><a href="https://github.com/josephmisiti/awesome-machine-learning">josephmisiti/awesome-machine-learning (23,723s/5,798f)</a> : A curated list of awesome Machine Learning frameworks, libraries and software.</li>
+<li><a href="https://github.com/python/cpython">python/cpython (8,432s/1,605f)</a> : The Python programming language</li>
+<li><a href="https://github.com/datitran/Object-Detector-App">datitran/Object-Detector-App (47s/20f)</a> :</li>
+<li><a href="https://github.com/pallets/flask">pallets/flask (27,876s/8,835f)</a> : A microframework based on Werkzeug, Jinja2 and good intentions</li>
+<li><a href="https://github.com/GerbenJavado/LinkFinder">GerbenJavado/LinkFinder (39s/9f)</a> : A python script that finds endpoints in JavaScript files</li>
+<li><a href="https://github.com/songrotek/Deep-Learning-Papers-Reading-Roadmap">songrotek/Deep-Learning-Papers-Reading-Roadmap (12,199s/2,130f)</a> : Deep Learning papers reading roadmap for anyone who are eager to learn this amazing tech!</li>
+<li><a href="https://github.com/rg3/youtube-dl">rg3/youtube-dl (26,926s/5,094f)</a> : Command-line program to download videos from YouTube.com and other video sites</li>
+<li><a href="https://github.com/wwmm/pulseeffects">wwmm/pulseeffects (128s/5f)</a> : Limiter, compressor, reverberation, equalizer and auto volume effects for Pulseaudio applications</li>
+<li><a href="https://github.com/ansible/ansible">ansible/ansible (23,886s/8,112f)</a> : Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy. Avoid writing scripts or custom code to deploy and update your applications— automate in a language that approaches plain English, using SSH, with no agents to install on remote systems.</li>
+<li><a href="https://github.com/shadowsocks/shadowsocks">shadowsocks/shadowsocks (18,248s/10,876f)</a> :</li>
+<li><a href="https://github.com/requests/requests">requests/requests (25,743s/4,654f)</a> : Python HTTP Requests for Humans™ ✨🍰✨</li>
+</ul>
+
+<h4 id="go">go</h4>
+
+<ul>
+<li><a href="https://github.com/dgraph-io/badger">dgraph-io/badger (1,907s/74f)</a> : Fastest key-value store in Go.</li>
+<li><a href="https://github.com/axiomhq/hyperloglog">axiomhq/hyperloglog (249s/4f)</a> : HyperLogLog with lots of sugar (Sparse, LogLog-Beta bias correction and TailCut space reduction)</li>
+<li><a href="https://github.com/manifoldco/torus-cli">manifoldco/torus-cli (367s/22f)</a> : A secure, shared workspace for secrets</li>
+<li><a href="https://github.com/nuveo/prest">nuveo/prest (1,145s/37f)</a> : A fully RESTful API from any existing PostgreSQL database written in Go</li>
+<li><a href="https://github.com/unixpickle/muniverse">unixpickle/muniverse (122s/1f)</a> : µniverse: RL environments for HTML5 games</li>
+<li><a href="https://github.com/qiniu/logkit">qiniu/logkit (60s/11f)</a> :</li>
+<li><a href="https://github.com/golang/go">golang/go (29,235s/3,935f)</a> : The Go programming language</li>
+<li><a href="https://github.com/ethereum/go-ethereum">ethereum/go-ethereum (5,356s/1,651f)</a> : Official Go implementation of the Ethereum protocol</li>
+<li><a href="https://github.com/kubernetes/kubernetes">kubernetes/kubernetes (24,334s/8,639f)</a> : Production-Grade Container Scheduling and Management</li>
+<li><a href="https://github.com/fortytw2/leaktest">fortytw2/leaktest (385s/11f)</a> : Goroutine Leak Detector</li>
+<li><a href="https://github.com/docker-slim/docker-slim">docker-slim/docker-slim (928s/37f)</a> : DockerSlim (docker-slim): Optimize and secure your Docker containers (free and open source)</li>
+<li><a href="https://github.com/dgraph-io/dgraph">dgraph-io/dgraph (3,372s/169f)</a> : Fast, Distributed Graph DB</li>
+<li><a href="https://github.com/bradfitz/tcpproxy">bradfitz/tcpproxy (167s/3f)</a> : Go package for writing TCP proxies, routing based on HTTP Host headers and SNI server names.</li>
+<li><a href="https://github.com/nsqio/nsq">nsqio/nsq (9,647s/1,240f)</a> : A realtime distributed messaging platform</li>
+<li><a href="https://github.com/aquasecurity/kube-bench">aquasecurity/kube-bench (108s/1f)</a> : The Kubernetes Bench for Security is a Go application that checks whether Kubernetes is deployed according to security best practices</li>
+<li><a href="https://github.com/casbin/casbin">casbin/casbin (934s/82f)</a> : An authorization library that supports access control models like ACL, RBAC, ABAC</li>
+<li><a href="https://github.com/gohugoio/hugo">gohugoio/hugo (18,039s/2,508f)</a> : A Fast and Flexible Static Site Generator built with love in GoLang.</li>
+<li><a href="https://github.com/gopherchina/meetup">gopherchina/meetup (183s/51f)</a> : meetup in China</li>
+<li><a href="https://github.com/avelino/awesome-go">avelino/awesome-go (21,639s/2,722f)</a> : A curated list of awesome Go frameworks, libraries and software</li>
+<li><a href="https://github.com/gogits/gogs">gogits/gogs (19,695s/2,248f)</a> : Gogs is a painless self-hosted Git service.</li>
+<li><a href="https://github.com/farmerx/ElasticHD">farmerx/ElasticHD (421s/77f)</a> : Elasticsearch 可视化DashBoard, 支持Es监控、实时搜索，Index template快捷替换修改，索引列表信息查看， SQL converts to DSL等</li>
+<li><a href="https://github.com/bitnami/sealed-secrets">bitnami/sealed-secrets (81s/4f)</a> : A Kubernetes controller and tool for one-way encrypted Secrets</li>
+<li><a href="https://github.com/fatedier/frp">fatedier/frp (5,285s/852f)</a> : A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.</li>
+<li><a href="https://github.com/containous/traefik">containous/traefik (8,585s/779f)</a> : Træfik, a modern reverse proxy</li>
+<li><a href="https://github.com/rs/zerolog">rs/zerolog (338s/9f)</a> : Zero Allocation JSON Logger</li>
+</ul>
+
+      </article>
+
+      <ul class="pager blog-pager">
+        
+          <li class="previous">
+            <a href="https://borays.github.io/post/good-to-great/" data-toggle="tooltip" data-placement="top" title="Good To Great">&larr; Previous Post</a>
+          </li>
+        
+        
+      </ul>
+
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+          &nbsp;&bull;&nbsp;
+          2017
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://borays.github.io">Ulric&#39;s Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.24.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://borays.github.io/js/main.js"></script>
+<script src="https://borays.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+
+  </body>
+</html>
+
