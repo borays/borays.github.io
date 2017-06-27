@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Ulric&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jun 2017 08:49:22 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jun 2017 08:57:47 +0800</lastBuildDate>
     
 	<atom:link href="https://borays.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernets</title>
+      <link>https://borays.github.io/post/kubernets/</link>
+      <pubDate>Tue, 27 Jun 2017 08:57:47 +0800</pubDate>
+      
+      <guid>https://borays.github.io/post/kubernets/</guid>
+      <description>v1.7.0-rc.1  Downloads for v1.7.0-rc.1 Client Binaries Server Binaries Node Binaries Changelog since v1.7.0-beta.2 Action Required Other notable changes  v1.8.0-alpha.1  Downloads for v1.8.0-alpha.1 Client Binaries Server Binaries Node Binaries Changelog since v1.7.0-alpha.4 Action Required Other notable changes  v1.6.6  Downloads for v1.6.6 Client Binaries Server Binaries Node Binaries Changelog since v1.6.5 Action Required Other notable changes  v1.7.0-beta.2  Downloads for v1.7.0-beta.2 Client Binaries Server Binaries Node Binaries Changelog since v1.</description>
+    </item>
     
     <item>
       <title>2017 06 27</title>
