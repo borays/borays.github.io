@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Ulric&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Jun 2017 08:57:47 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jun 2017 15:48:45 +0800</lastBuildDate>
     
 	<atom:link href="https://borays.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Github_20170629</title>
+      <link>https://borays.github.io/post/github_20170629/</link>
+      <pubDate>Thu, 29 Jun 2017 15:48:45 +0800</pubDate>
+      
+      <guid>https://borays.github.io/post/github_20170629/</guid>
+      <description>2017-06-29 go  kubernetes/kubernetes (24,420s/8,674f) : Production-Grade Container Scheduling and Management ethereum/go-ethereum (5,435s/1,671f) : Official Go implementation of the Ethereum protocol junegunn/fzf (9,394s/375f) : ?? A command-line fuzzy finder written in Go golang/go (29,303s/3,945f) : The Go programming language gohugoio/hugo (18,095s/2,519f) : A Fast and Flexible Static Site Generator built with love in GoLang. nuveo/prest (1,214s/38f) : A fully RESTful API from any existing PostgreSQL database written in Go moby/moby (44,346s/13,163f) : Moby Project - a collaborative project for the container ecosystem to assemble container-based systems google/trillian (528s/78f) : Trillian implements a Merkle tree whose contents are served from a data storage layer, to allow scalability to extremely large trees.</description>
+    </item>
     
     <item>
       <title>Kubernets</title>
